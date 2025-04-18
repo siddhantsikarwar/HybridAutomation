@@ -1,0 +1,16 @@
+# IntelliJ & Java Build Folders
+.idea/
+!.idea/misc.xml
+!.idea/modules.xml
+*.iml
+
+# Maven build output
+target/
+
+# Test results
+allure-results/
+test-output/
+
+# Logs & compiled classes
+*.log
+*.class
