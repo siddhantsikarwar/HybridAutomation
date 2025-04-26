@@ -4,6 +4,7 @@ import factory.DriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import utils.ConfigReader;
 
 public class BaseTest {
     protected WebDriver driver;
@@ -11,7 +12,7 @@ public class BaseTest {
     @BeforeMethod
     public void setup() {
         driver = DriverFactory.getDriver();
-        driver.get("https://opensource-demo.orangehrmlive.com/");
+        driver.get(ConfigReader.getProperty("baseUrl"));
     }
 
     @AfterMethod
