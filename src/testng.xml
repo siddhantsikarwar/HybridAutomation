@@ -3,7 +3,8 @@
 <suite name="HybridAutomation Setup">
     <test name="Regression">
         <classes>
-            <class name="tests.HomePageTest"/>
+            <class name="tests.LoginPageTest"/>
+            <class name="tests.DashboardPageTest"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
